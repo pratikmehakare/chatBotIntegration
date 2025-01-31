@@ -42,25 +42,6 @@ Copy the code from the integration section.
 Paste it into the <head> tag of your HTML file.
 For further details, refer to the Integration Steps section in the application.
 
-Live Demo
-You can view a live demo of the chatbot here:https://chat-bot-integration.vercel.app/
-
-Live Chatbot Demo https://chat-bot-integration.vercel.app/
-
-Contributing
-Feel free to fork the repository and submit pull requests. Please ensure to follow the project guidelines and keep the code clean and well-commented
-
-
-### Key Sections in the `README.md`:
-
-1. **Project Title**: Clearly states the project title.
-2. **Features**: Highlights the main features of the chatbot.
-3. **Technologies Used**: Lists the technologies you used to build the chatbot.
-4. **Installation**: Instructions on how to clone, install dependencies, and run the project locally.
-5. **Usage**: A brief explanation of how the chatbot works once the server is running.
-6. **Live Demo**: A link to the live demo of your project (replace the placeholder with the actual URL).
-7. **Contributing**: Instructions for contributing to the project.
-8. **License**: Information about the license for the project (MIT License in this case).
 
 ### URL for the live demo:
 https://chat-bot-integration.vercel.app/
