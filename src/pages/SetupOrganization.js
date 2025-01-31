@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { FaSpinner } from "react-icons/fa";
+import toast from "react-hot-toast";
 
 function SetupOrganization() {
   const [companyName, setCompanyName] = useState("");
@@ -42,7 +43,7 @@ function SetupOrganization() {
     if (companyName && websiteURL && description) {
       navigate("/chatbot-integration");
     } else {
-      alert("Please fill in all required fields before proceeding.");
+      toast.error("Please fill in all required fields before proceeding.")
     }
   };
 
