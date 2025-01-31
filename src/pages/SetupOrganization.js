@@ -55,7 +55,7 @@ function SetupOrganization() {
             : page
         )
       );
-    }, 9000); 
+    }, 6000); 
 
     setTimeout(() => {
       setPages((prevPages) =>
