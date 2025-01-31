@@ -44,23 +44,23 @@ const ClientDummyPage = () => {
 
       {/* Chatbot Window */}
       {showChat && (
-        <div className="fixed bottom-6 right-6 w-96 bg-white border-2 border-gray-300 rounded-lg shadow-xl">
+        <div className="fixed bottom-6 right-6 w-full sm:w-[90%] md:w-[400px] bg-white border-2 border-gray-300 rounded-lg shadow-xl max-h-[80vh] max-w-[100%]">
           <div className="flex justify-between items-center p-3 bg-blue-600 text-white rounded-t-lg">
-            <h3 className="font-semibold">Chatbot</h3>
+            <h3 className="font-semibold text-sm sm:text-lg">Chatbot</h3>
             <AiOutlineClose
               className="cursor-pointer"
               onClick={toggleChat}
               size={20}
             />
           </div>
-          <div className="p-4 max-h-60 overflow-y-auto space-y-4">
+          <div className="p-4 max-h-[50vh] sm:max-h-[60vh] overflow-y-auto space-y-4">
             {messages.map((msg, idx) => (
               <div
                 key={idx}
                 className={`flex ${msg.sender === "user" ? "justify-end" : ""}`}
               >
                 <div
-                  className={`p-3 rounded-lg max-w-xs ${
+                  className={`p-3 rounded-lg max-w-xs sm:max-w-md ${
                     msg.sender === "user"
                       ? "bg-blue-600 text-white"
                       : "bg-gray-200 text-gray-700"
@@ -74,13 +74,13 @@ const ClientDummyPage = () => {
           <div className="flex items-center p-3 border-t-2 border-gray-300">
             <input
               type="text"
-              className="w-full p-2 rounded-lg border-2 border-gray-300"
+              className="w-full p-2 rounded-lg border-2 border-gray-300 text-sm sm:text-base"
               placeholder="Type a message..."
               value={userMessage}
               onChange={(e) => setUserMessage(e.target.value)}
             />
             <motion.button
-              className="ml-2 p-2 bg-blue-600 text-white rounded-full"
+              className="ml-2 p-2 bg-blue-600 text-white rounded-full text-sm sm:text-base"
               onClick={handleSendMessage}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
